@@ -1,19 +1,17 @@
 function getElementsLessThan100AtProperty(obj,key){
     let myArray = obj[key]
-   if(myArray.length===0){
-       return [];
+    let storageArray= [];
+   if(typeof myArray==="object" ){
+       for(let i = 0; i<myArray.length; i++){
+           if(myArray[i]<100){
+               storageArray.push(myArray[i])
+           }
+
+       }
    }
-   if(myArray>100){
-       return [];
-   }
-   if(myArray==!myArray.isArray){
-       return [];
-   }
-   if(myArray===undefined){
-       return [];
-   }
-   return myArray
-}
+   return storageArray;
+}   
+   
 
 
 
