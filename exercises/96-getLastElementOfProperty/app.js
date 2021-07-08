@@ -1,10 +1,10 @@
 function getLastElementOfProperty(obj,key){
     let newArray = obj[key]
-    let answer = [];
     if(typeof newArray === 'object' || newArray!=[]){
         for(let i = 0; i<newArray.length; i++){
-            return newArray[2]
+            let newArray1 = newArray[i]
         }
+        return newArray[newArray.length-1]
     }
 }
 
