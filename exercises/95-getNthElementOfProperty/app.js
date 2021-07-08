@@ -1,9 +1,6 @@
-function getNthElementOfProperty(obj,key,n){
-    let newArray = obj[key]
-    if(n)
-    for(let i = 0; i<newArray.length; i++){
-
-    }
+function getNthElementOfProperty(obj,key,nth){
+     return obj[key][nth];
+   
 }
 
 
